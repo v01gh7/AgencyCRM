@@ -8,6 +8,10 @@
 :root {
   --font-display: "Noto Sans", "Roboto", "Ubuntu", sans-serif;
   --mainColor: #CE9967;
+  --secondColor: #FAD18A;
+  --thirdColor: #FAB337;
+  --fourthColor: #FA7337;
+  --fiveColor: #FACA37;
   --glass-bg: rgba(255,255,255,0.06);
   --glass-border: rgba(255,255,255,0.12);
   --glass-accent: rgba(206,153,103,0.12);
@@ -15,17 +19,19 @@
   --btn-shadow: 0 6px 18px rgba(206,153,103,0.16);
   --btn-gradient: linear-gradient(90deg, var(--mainColor), color-mix(in srgb, var(--mainColor) 70%, #ffffff 30%));
 }
-
 /* Base layer */
 @layer base {
   body {
-    @apply bg-gradient-to-br from-[#0f172a] via-[#071034] to-[#061123] min-h-screen text-slate-100 font-sans;
+    /* Плавный мягкий фон без резких контрастов */
+    background: #1a1a1a;
+      
+    min-height: 100vh;
+    color: #FFFFFF; /* читаемый белый текст */
     font-family: var(--font-display);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 }
-
 /* Components */
 @layer components {
   /* Glass card */
