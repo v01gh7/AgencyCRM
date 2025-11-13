@@ -1,0 +1,159 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+*lock.*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+.npm
+.eslintcache
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# === Docker ===
+.dockerignore
+docker-compose.override.yml
+*.dockerignore
+
+# === Database files ===
+# PostgreSQL
+/postgres/data/
+/pgdata/
+*.pid
+*.log
+postmaster.opts
+postmaster.pid
+
+# Redis
+/redis/data/
+redis.conf
+dump.rdb
+appendonly.aof
+
+*.tsbuildinfo
+
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+*.zip
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+.env.local
+.env.production
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Serverless directories
+.serverless/
+
+# TernJS port file
+.tern-port
+
+# === OS generated files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === IDE ===
+# VS Code
+.vscode/
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# === SSL certificates ===
+*.pem
+*.key
+*.crt
+*.csr
+
+# === Build artifacts ===
+/dist/
+/build/
+/out/
+
+# === Temporary files ===
+*.tmp
+*.temp
+.cache
+
+# === CI/CD ===
+.circleci/
+.github/
+.gitlab-ci.yml
+.bitbucket-pipelines.yml
+
+# === Documentation ===
+_site/
+.sass-cache/
+.jekyll-cache/
