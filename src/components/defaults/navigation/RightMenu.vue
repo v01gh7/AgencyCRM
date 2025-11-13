@@ -12,7 +12,7 @@
       <router-link to="/" class="p-3 rounded hover:bg-white/5">Настройки</router-link>
     </nav>
 
-    <div class="mt-auto text-sm text-slate-400">
+    <div class="mt-auto text-sm text-white-400">
       <div>Версия: 0.1</div>
       <div class="mt-2">GM ADHUB</div>
     </div>

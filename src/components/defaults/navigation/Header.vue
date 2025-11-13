@@ -4,7 +4,7 @@
       <div class="w-10 h-10 rounded-md flex items-center justify-center bg-[linear-gradient(90deg,var(--mainColor),#f1d6b5)] text-black font-bold">GM</div>
       <div>
         <h1 class="text-lg font-semibold">Agency AdHub</h1>
-        <p class="text-xs text-slate-400">AgencyCRM — реклама в одном месте</p>
+        <p class="text-xs text-white-400">AgencyCRM — реклама в одном месте</p>
       </div>
     </div>
 
