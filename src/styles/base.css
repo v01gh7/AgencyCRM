@@ -1,1 +1,82 @@
+/* Fonts: Noto Sans (with cyrillic), Roboto, Ubuntu as fallback */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap&subset=cyrillic');
+
+/* Tailwind */
 @import "tailwindcss";
+
+/* Theme variables */
+:root {
+  --font-display: "Noto Sans", "Roboto", "Ubuntu", sans-serif;
+  --mainColor: #CE9967;
+  --glass-bg: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.12);
+  --glass-accent: rgba(206,153,103,0.12);
+  --glass-shadow-md: 0 8px 32px rgba(16,24,40,0.25);
+  --btn-shadow: 0 6px 18px rgba(206,153,103,0.16);
+  --btn-gradient: linear-gradient(90deg, var(--mainColor), color-mix(in srgb, var(--mainColor) 70%, #ffffff 30%));
+}
+
+/* Base layer */
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-[#0f172a] via-[#071034] to-[#061123] min-h-screen text-slate-100 font-sans;
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Components */
+@layer components {
+  /* Glass card */
+  .glass {
+    @apply rounded-2xl p-6 border backdrop-blur-md;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow-md);
+  }
+
+  .glass-accent {
+    @apply rounded-2xl p-6 border backdrop-blur-md;
+    background: linear-gradient(180deg, rgba(206,153,103,0.08) 0%, rgba(206,153,103,0.02) 100%);
+    border: 1px solid rgba(206,153,103,0.18);
+    box-shadow: var(--glass-shadow-md);
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-3 px-4 py-2 rounded-md text-sm font-medium;
+    background: var(--btn-gradient);
+    color: white;
+    box-shadow: var(--btn-shadow);
+  }
+
+  .accent-ring {
+    box-shadow: 0 0 0 6px rgba(206,153,103,0.06);
+  }
+
+  /* Router view transition */
+  .route-fade-enter-active, .route-fade-leave-active {
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  .route-fade-enter-from, .route-fade-leave-to {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  /* Right drawer */
+  .drawer-right {
+    transform: translateX(100%);
+    transition: transform .28s cubic-bezier(.2,.9,.3,1);
+  }
+  .drawer-right.open {
+    transform: translateX(0%);
+  }
+}
+
+button{
+  cursor: pointer;
+}
