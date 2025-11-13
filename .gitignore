@@ -157,3 +157,5 @@ Thumbs.db
 _site/
 .sass-cache/
 .jekyll-cache/
+
+*secret*
