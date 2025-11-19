@@ -5,6 +5,7 @@
       <p class="text-slate-200 mb-6 text-[var(--text-color)] header-subtext">Подключи аккаунт, чтобы тестировать Google Ads API или Yandex Metrika</p>
 
       <GoogleAuth />
+      <br>
       <YandexAuth />
     </div>
   </div>
