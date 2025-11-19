@@ -5,6 +5,7 @@
       <p class="text-slate-200 mb-6 text-[var(--text-color)] header-subtext">Подключи аккаунт, чтобы тестировать Google Ads API или Yandex Metrika</p>
 
       <GoogleAuth />
+      <YandexAuth />
     </div>
   </div>
 </template>
@@ -12,6 +13,7 @@
 
 <script setup lang="ts">
 import GoogleAuth from '@/components/Auth/SignIn/GoogleAuth.vue'
+import YandexAuth from '@/components/Auth/SignIn/YandexAuth.vue'
 
 </script>
 
