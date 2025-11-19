@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt/config';
-
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -8,18 +6,21 @@ export default defineNuxtConfig({
     strict: true
   },
   app: {
-    pageTransition: { name: 'route-fade', mode: 'out-in' },
-    rootId: 'app',
-    rootTag: 'body'    
+    pageTransition: { name: 'route-fade', mode: 'out-in' }  
   },
-  srcDir: 'src/', 
+  srcDir: 'src/',
   alias: {
     '@': './src'
   },
+  nitro: {
+    alias: {
+      '@': './src'
+    }
+  },  
   postcss: {
     plugins: {
       '@tailwindcss/postcss': {},
       'autoprefixer': {},
     }
-  }  
+  }
 })

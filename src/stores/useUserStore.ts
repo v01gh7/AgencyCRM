@@ -1,8 +1,16 @@
 import { ref, computed } from 'vue'
 import { useLocalStorage } from '@vueuse/core'
 
+interface User {
+    email: string
+    name: string
+    picture?: string
+    id: string
+    locale?: string
+}
+
 export const useUserStore = () => {
-    const user = useLocalStorage('user', null)
+    const user = useLocalStorage<User | null>('user', null)
     const token = useLocalStorage('google_token', '')
     const loaded = ref(!!user.value)
     const isAuthenticated = computed(() => !!user.value && !!token.value)
@@ -49,10 +57,6 @@ export const useUserStore = () => {
 
         return user.value
     }
-
-    /**
-     * Выход из аккаунта
-     */
     function logout() {
         user.value = null
         token.value = null

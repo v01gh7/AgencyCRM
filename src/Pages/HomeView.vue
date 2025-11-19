@@ -46,4 +46,8 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  guestOnly: true
+})
+
 </script>

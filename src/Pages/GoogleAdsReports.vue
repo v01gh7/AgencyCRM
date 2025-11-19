@@ -201,6 +201,13 @@ onMounted(async () => {
     await fetchReports()
   }
 })
+
+
+definePageMeta({
+  requiresAuth: true
+})
+
+
 </script>
 
 <style scoped>

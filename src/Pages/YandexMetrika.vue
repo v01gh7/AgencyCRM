@@ -283,6 +283,11 @@ onMounted(async () => {
   if (!token.value) return
   await fetchCounters()
 })
+
+definePageMeta({
+  requiresAuth: true
+})
+
 </script>
 
 <style scoped>

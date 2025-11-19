@@ -21,6 +21,10 @@ onMounted(() => {
     // закрываем popup
     window.close()
 })
+definePageMeta({
+  guestOnly: true
+})
+
 </script>
 
 <template>

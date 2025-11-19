@@ -13,12 +13,12 @@
 
 
 <script setup lang="ts">
-import GoogleAuth from '@/components/Auth/SignIn/GoogleAuth.vue'
-import YandexAuth from '@/components/Auth/SignIn/YandexAuth.vue'
+import GoogleAuth from '@/components/Auth/Google/Auth/GoogleAuth.vue'
+import YandexAuth from '@/components/Auth/Yandex/Auth/YandexAuth.vue'
 
+definePageMeta({
+  requiresAuth: false
+})
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped>  </style>

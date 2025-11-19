@@ -10,7 +10,10 @@ const router = useRouter()
 userStore.logout()
 
 // перенаправляем на главную или signin
-router.push('/signin')
+router.navigateTo('/signin')
+definePageMeta({
+  guestOnly: true
+})
 </script>
 
 <template>
