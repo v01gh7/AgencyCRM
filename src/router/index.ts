@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router"
 // импорт твоего редактора
 import HomeView from "@/Pages/Home/HomeView.vue"
 import GoogleAdsReports from "@/Pages/GoogleAds/GoogleAdsReports.vue"
+import YandexMetrikaReports from "@/Pages/YandexMetrika/YandexMetrika.vue"
 
 
 import SignIn from "@/components/Auth/SignIn/SignIn.vue"
@@ -43,6 +44,12 @@ const routes = [
     name: 'GoogleAdsReports',
     component: GoogleAdsReports,
     meta: { requiresAuth: true },
+  },  
+  {
+    path: '/yandex-metrika-reports',
+    name: 'YandexMetrikaReports',
+    component: YandexMetrikaReports,
+    meta: { requiresAuth: false },
   },  
   // {
   //   path: '/dashboard',

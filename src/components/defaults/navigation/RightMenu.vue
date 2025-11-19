@@ -11,6 +11,7 @@
       <router-link to="/" class="p-3 rounded hover:bg-white/5">Кабинеты</router-link>
       <router-link to="/" class="p-3 rounded hover:bg-white/5">Настройки</router-link>
       <router-link v-if="userStore.isAuthenticated.value" to="/google-ads-reports" class="p-3 rounded hover:bg-white/5">Google Ads Отчёты</router-link>
+      <router-link to="/yandex-metrika-reports" class="p-3 rounded hover:bg-white/5">Yandex Metrika Отчёты</router-link>
       <router-link v-if="!userStore.isAuthenticated.value" to="/signin" class="p-3 rounded hover:bg-white/5">Авторизоваться</router-link>
       <router-link v-if="userStore.isAuthenticated.value" to="/logout" class="p-3 rounded hover:bg-white/5">Выйти</router-link>
     </nav>
