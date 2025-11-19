@@ -9,9 +9,7 @@
         boxShadow: 'var(--btn-shadow)'
       }"
     >
-      <svg width="22" height="22" viewBox="0 0 48 48">
-        <path fill="#FC3F1D" d="M24 2L10 6v16c0 9.94 6.51 19.44 14 24c7.49-4.56 14-14.06 14-24V6l-14-4z"/>
-      </svg>
+    <svg width="32px" fill="none" height="32px" viewBox="0 0 32 32"><mask id="mask0_1315_11716" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32"><ellipse cx="16" cy="16.0011" rx="16" ry="16" fill="white"></ellipse></mask><g mask="url(#mask0_1315_11716)"><rect y="0.00224304" width="32" height="32" fill="url(#paint0_linear_1315_11716)"></rect><path d="M0 20H10V32H0V20Z" fill="url(#paint1_linear_1315_11716)"></path><path d="M10 16.4C10 14.1598 10 13.0397 10.436 12.184C10.8195 11.4314 11.4314 10.8195 12.184 10.436C13.0397 10 14.1598 10 16.4 10H22V32H10V16.4Z" fill="url(#paint2_linear_1315_11716)"></path><path d="M22 0H32V32H22V0Z" fill="url(#paint3_linear_1315_11716)"></path></g><defs><linearGradient id="paint0_linear_1315_11716" x1="22.9334" y1="23.2008" x2="-3.46665" y2="-13.5992" gradientUnits="userSpaceOnUse"><stop stop-color="#4643B9"></stop><stop offset="1" stop-color="#1E8AFF"></stop></linearGradient><linearGradient id="paint1_linear_1315_11716" x1="10.6584" y1="27.8479" x2="-18.8276" y2="22.4987" gradientUnits="userSpaceOnUse"><stop stop-color="#FF002E"></stop><stop offset="1" stop-color="#FFADA1"></stop></linearGradient><linearGradient id="paint2_linear_1315_11716" x1="83.8" y1="80.2778" x2="91.207" y2="20.8038" gradientUnits="userSpaceOnUse"><stop stop-color="#3C3BA0"></stop><stop offset="0.489583" stop-color="#1E8AFF"></stop><stop offset="1" stop-color="#00B2FF"></stop></linearGradient><linearGradient id="paint3_linear_1315_11716" x1="22" y1="1.64523" x2="50.1153" y2="16.4011" gradientUnits="userSpaceOnUse"><stop stop-color="#FFEA1A"></stop><stop offset="1" stop-color="#FFB800"></stop></linearGradient></defs></svg>
       Продолжить с Яндекс
     </button>
 
