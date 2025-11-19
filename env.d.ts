@@ -10,6 +10,8 @@ interface ImportMetaEnv {
     readonly VITE_GOOGLE_PROJECT_ID: string
     readonly VITE_GOOGLE_ORIGIN: string
     readonly VITE_GOOGLE_ADS_DEV_TOKEN: string
+    readonly VITE_YANDEX_CLIENT_ID: string
+    readonly VITE_YANDEX_REDIRECT: string
 }
 
 interface ImportMeta {
